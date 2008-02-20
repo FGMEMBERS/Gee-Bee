@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>turn.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>BallEnclosure</object-name>
+    <object-name>Ball</object-name>
+    <object-name>Ball_1</object-name>
+    <emission>
+      <red>1.0</red>
+      <green>0.2</green>
+      <blue>0.0</blue>
+      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Ball</object-name>
+    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <factor>21</factor>
+    <min-deg>-15</min-deg>
+    <max-deg>15</max-deg>
+    <center>
+      <x-m>01</x-m>
+      <y-m>0</y-m>
+      <z-m>0.05</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Ball_1</object-name>
+  <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
+  <center>
+   <x-m>-0.022</x-m>
+   <y-m>0.00</y-m>
+   <z-m>0</z-m>
+  </center> 
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
+

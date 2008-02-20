@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D), Pierre GEOFFROY (FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Gee-Bee/geebee-splash.rgb</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Gee-Bee/Sounds/geebee-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Gee-Bee/Models/geebee.xml</path>
+    </model>
+
+    <panel>
+      <visibility archive="y">false</visibility>
+    </panel>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay> 
+
+    <help>
+      <title>Racer Gee Bee</title>
+      <line>______________________________________________</line>
+    </help>
+
+  </sim>
+ 
+  <input>
+    <keyboard include="Nasal/geebee-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <geebee>
+      <file>Aircraft/Gee-Bee/Nasal/doors.nas</file>
+      <file>Aircraft/dhc3/Nasal/light.nas</file>
+    </geebee>
+  </nasal>
+  
+</PropertyList>
