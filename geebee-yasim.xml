@@ -4,7 +4,7 @@
 <airplane mass="1840">
 
 <!-- Approach configuration -->
-<approach speed="56" aoa="10" fuel="0.2">
+<approach speed="56" aoa="7" fuel="0.2">
   <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
@@ -29,7 +29,7 @@
 
 <wing x="0.629" y="0.705" z="-0.070" 
       taper="1" 
-      incidence="-1.2"
+      incidence="0"
       length="3.051" 
       chord="1.301" 
       sweep="0" 
@@ -80,8 +80,8 @@
 	     moment="35"
 	     cruise-speed="226" 
              cruise-alt="5000"
-	     cruise-rpm="1725"
-	     cruise-power="525"
+	     cruise-rpm="2200"
+	     cruise-power="670"
 	     takeoff-power="730" 
 	     takeoff-rpm="2300"
 	     min-rpm="200"
