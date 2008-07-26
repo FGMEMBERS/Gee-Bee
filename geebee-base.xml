@@ -11,7 +11,7 @@
     <fuel-fraction>1.0</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/Gee-Bee/geebee-splash.rgb</splash-texture>
+      <splash-texture>Aircraft/Gee-Bee/geebee-splash.png</splash-texture>
     </startup>
 
     <sound>
@@ -20,6 +20,9 @@
 
     <model>
       <path archive="y">Aircraft/Gee-Bee/Models/geebee.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model>
 
     <panel>
@@ -28,12 +31,25 @@
 
     <multiplay>
       <chat_display>1</chat_display>
-    </multiplay> 
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
 
     <help>
       <title>Racer Gee Bee</title>
-      <line>______________________________________________</line>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
     </help>
+
+    <menubar include="Dialogs/geebee-menu.xml"/>
 
   </sim>
  
@@ -44,7 +60,9 @@
   <nasal>
     <geebee>
       <file>Aircraft/Gee-Bee/Nasal/doors.nas</file>
-      <file>Aircraft/dhc3/Nasal/light.nas</file>
+      <file>Aircraft/Gee-Bee/Nasal/light.nas</file>
+      <file>Aircraft/Gee-Bee/Nasal/liveries.nas</file>
+      <file>Aircraft/Gee-Bee/Nasal/immat.nas</file>
     </geebee>
   </nasal>
   
