@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="geebee-jsbsim-set.xml"> -->
-<PropertyList include="geebee-yasim-set.xml">
+<!-- <PropertyList include="geebee-jsbsim-cnf.xml"> -->
+<PropertyList include="geebee-yasim-cnf.xml">
 
   <sim>
     <description>Racer Gee Bee</description>
