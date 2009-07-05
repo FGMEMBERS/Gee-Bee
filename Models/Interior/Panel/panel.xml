@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -73,7 +73,7 @@
 
   <!-- Magnetic Compass -->
   <model>
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/MagneticCompass/compas.xml</path>
     <offsets>
       <x-m>  0.073 </x-m>
       <y-m> -0.077 </y-m>

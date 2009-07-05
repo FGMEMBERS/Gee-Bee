@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -36,15 +36,23 @@
     <object-name>moteur</object-name>
 
     <!-- Objets transparents -->
-    <object-name>vitre</object-name>
+    <object-name>vitres</object-name>
     <object-name>verriere</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
   </animation>
 
   <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>verriere</object-name>
+  </animation>
+
+  <animation>
     <type>noshadow</type>
-    <object-name>vitre</object-name>
+    <object-name>vitres</object-name>
     <object-name>verriere</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
@@ -81,12 +89,12 @@
   <model>
     <path>Aircraft/Gee-Bee/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <x-m>  0 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -94,12 +102,12 @@
   <model>
     <path>Aircraft/Gee-Bee/Models/Immat/immat.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg>   0.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <x-m>  0 </x-m>
+      <y-m>  0 </y-m>
+      <z-m>  0 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -183,9 +191,9 @@
       <z-m>  0.112 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -201,9 +209,9 @@
       <z-m> 0.426 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -219,9 +227,9 @@
       <z-m> 0.420 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -237,9 +245,9 @@
       <z-m> -0.064 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation> 
 
@@ -253,9 +261,9 @@
       <y-m>  2.242 </y-m>
       <z-m> -0.064 </z-m>
     </center>    <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation> 
 
@@ -270,9 +278,9 @@
       <y-m> -1.332 </y-m>
       <z-m> -0.112 </z-m>
     </center>    <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -286,49 +294,39 @@
       <y-m>  1.332 </y-m>
       <z-m> -0.112 </z-m>
     </center>    <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
-<!-- Canopy -->
- <animation>
-   <type>rotate</type>
-   <object-name>verriere</object-name>
-   <object-name>tour</object-name>
-   <property>/instrumentation/doors/crew/position-norm</property>
-   <interpolation>
-     <entry>
-       <ind> 0.00 </ind>
-       <dep> 0.00 </dep>
-     </entry>
-     <entry>
-       <ind>  0.25 </ind>
-       <dep> 10.00 </dep>
-     </entry>
-     <entry>
-       <ind>  0.50 </ind>
-       <dep> 20.00 </dep>
-     </entry>
-     <entry>
-       <ind>  0.75 </ind>
-       <dep> 45.00 </dep>
-     </entry>
-     <entry>
-       <ind>  1.00 </ind>
-       <dep> 90.00 </dep>
-     </entry>
-   </interpolation>
-   <axis>
-     <x1-m>  1.445 </x1-m>
-     <y1-m>  0.166 </y1-m>
-     <z1-m>  0.759 </z1-m>
-     <x2-m>  1.113 </x2-m>
-     <y2-m>  0.234 </y2-m>
-     <z2-m>  0.759 </z2-m>
-   </axis>
- </animation>
+  <!-- Canopy -->
+  <animation>
+    <name>CanopyTotale</name>
+    <object-name>verriere</object-name>
+    <object-name>tour</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>CanopyTotale</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.25 </ind><dep> 10 </dep></entry>
+      <entry><ind> 0.50 </ind><dep> 20 </dep></entry>
+      <entry><ind> 0.75 </ind><dep> 45 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  1.445 </x1-m>
+      <y1-m>  0.166 </y1-m>
+      <z1-m>  0.759 </z1-m>
+      <x2-m>  1.113 </x2-m>
+      <y2-m>  0.234 </y2-m>
+      <z2-m>  0.759 </z2-m>
+    </axis>
+  </animation>
 
 </PropertyList>
 
