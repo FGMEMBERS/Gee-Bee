@@ -7,21 +7,31 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Gee-Bee/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
+    <object-name>capot</object-name>
     <object-name>ailes</object-name>
-    <object-name>bol</object-name>
-    <object-name>helice</object-name>
-    <object-name>roueG</object-name>
-    <object-name>roueD</object-name>
-    <object-name>roueA</object-name>
     <object-name>derive</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -29,11 +39,17 @@
     <object-name>direction</object-name>
     <object-name>tour</object-name>
     <object-name>tourfixe</object-name>
-    <object-name>cache</object-name>
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
+
+    <object-name>bol</object-name>
+    <object-name>helice</object-name>
     <object-name>soutiens</object-name>
-    <object-name>moteur</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueA</object-name>
+    <object-name>cache</object-name>
+    <object-name>trous</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -43,9 +59,54 @@
   </animation>
 
   <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>capot</object-name>
+    <object-name>ailes</object-name>
+    <object-name>derive</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>tour</object-name>
+    <object-name>tourfixe</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+
+    <object-name>bol</object-name>
+    <object-name>helice</object-name>
+    <object-name>soutiens</object-name>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueA</object-name>
+    <object-name>cache</object-name>
+    <object-name>trous</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>capot</object-name>
+    <object-name>ailes</object-name>
+    <object-name>derive</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>tour</object-name>
+    <object-name>tourfixe</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+  </effect>
+
+  <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitres</object-name>
     <object-name>verriere</object-name>
   </animation>
@@ -58,43 +119,23 @@
     <object-name>propdisc</object-name>
   </animation>
 
-  <animation>
-    <type>material</type>
-    <object-name>fuselage</object-name>
-    <object-name>ailes</object-name>
-    <object-name>bol</object-name>
-    <object-name>helice</object-name>
-    <object-name>roueG</object-name>
-    <object-name>roueD</object-name>
-    <object-name>roueA</object-name>
-    <object-name>derive</object-name>
-    <object-name>aileronG</object-name>
-    <object-name>aileronD</object-name>
-    <object-name>profondeur</object-name>
-    <object-name>direction</object-name>
-    <object-name>tour</object-name>
-    <object-name>tourfixe</object-name>
-    <object-name>cache</object-name>
-    <object-name>voletG</object-name>
-    <object-name>voletD</object-name>
-    <object-name>soutiens</object-name>
-    <object-name>moteur</object-name>
-
-    <property-base>sim/model/livery</property-base>
-    <texture-prop>texture</texture-prop>
-    <texture>texture.png</texture>
-  </animation>
+  <!-- Moteur -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/r1340/r1340.xml</path>
+    <offsets>
+      <x-m> -2.018 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.112 </z-m>
+    </offsets>
+  </model>
 
   <!-- Intérieur -->
   <model>
     <path>Aircraft/Gee-Bee/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m>  0 </x-m>
-      <y-m>  0 </y-m>
-      <z-m>  0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -102,12 +143,9 @@
   <model>
     <path>Aircraft/Gee-Bee/Models/Immat/immat.xml</path>
     <offsets>
-      <x-m>  0 </x-m>
-      <y-m>  0 </y-m>
-      <z-m>  0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -319,12 +357,12 @@
       <entry><ind> 1.00 </ind><dep> 90 </dep></entry>
     </interpolation>
     <axis>
-      <x1-m>  1.445 </x1-m>
-      <y1-m>  0.166 </y1-m>
-      <z1-m>  0.759 </z1-m>
-      <x2-m>  1.113 </x2-m>
-      <y2-m>  0.234 </y2-m>
-      <z2-m>  0.759 </z2-m>
+      <x1-m> 1.445 </x1-m>
+      <y1-m> 0.166 </y1-m>
+      <z1-m> 0.759 </z1-m>
+      <x2-m> 1.113 </x2-m>
+      <y2-m> 0.234 </y2-m>
+      <z2-m> 0.759 </z2-m>
     </axis>
   </animation>
 

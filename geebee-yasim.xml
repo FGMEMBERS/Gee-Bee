@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Gee Bee 2008 Emmanuel BARANGER
-                  Pierre GEOFFROY -->
+                  Pierre GEOFFROY
+     updated 2011 Emmanuel BARANGER with Melchior's script
+ 
+     sources          : http://en.wikipedia.org/wiki/Gee_Bee_Model_R
+
+     year             :  1933
+     wingspan         :  25 ft 0 in  (  7.62 m  )
+     length           :  17 ft 8 in  (  5.38 m  )
+     height           :   8 ft 2 in  (  2.48 m  )
+     max speed        : 473.8 km/h   ( 258.2 kt )
+     empty weight     : 1840 lb      (   834 kg )
+     engine           : Pratt & Whitney Wasp. Air Cooled 9 cylinder radial (800 hp)
+
+-->
 
 <airplane mass="1840">
 
   <!-- Approach configuration -->
-  <approach speed="56" aoa="7" fuel="0.2">
+  <approach speed="56" aoa="7" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
@@ -14,7 +27,7 @@
   </approach>
 
   <!-- Cruise configuration -->
-  <cruise speed="256" alt="6000" fuel="0.5">
+  <cruise speed="256" alt="6000" fuel="0.7">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
@@ -79,26 +92,36 @@
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
   </vstab>
 
+  <!-- Engines   source       : http://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-1340 
+
+                 name         : Pratt & Whitney R-1340
+                 Power        : 542 hp at 2200 rpm at 5,000
+                 type         : 9 cylinder single-row supercharged air-cooled radial engine
+                 weight       : 805 lb (365 kg)
+                 Displacement : 1343.8 in3 (22.02 l)
+                 Compression  : 6.0:1
+
+  -->
   <propeller x="2.055" y="0.0" z="-0.110" 
              radius="1.22"
-	     mass="800" 
-	     moment="35"
-	     cruise-speed="226" 
+             mass="805" 
+	           moment="15"
+	           cruise-speed="226" 
              cruise-alt="5000"
-	     cruise-rpm="2200"
-	     cruise-power="670"
-	     takeoff-power="730" 
-	     takeoff-rpm="2300"
-	     min-rpm="200"
-	     max-rpm="2300"
-	     fine-stop="0.8"
-	     coarse-stop="2">
+	           cruise-rpm="2200"
+	           cruise-power="670"
+	           takeoff-power="730" 
+	           takeoff-rpm="2300"
+	           min-rpm="200"
+	           max-rpm="2300"
+	           fine-stop="0.8"
+	           coarse-stop="2">
              <actionpt x="2.505" y="0.0" z="0.112" />
              <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
-             <piston-engine eng-rpm="2300" 
-                            eng-power="730"
-                            displacement="1344" 
-	                    compression="6">
+             <piston-engine eng-power="730"
+                            eng-rpm="2300" 
+                            displacement="1343.8" 
+                            compression="6">
                             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
                             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
                             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
@@ -137,7 +160,6 @@
   <tank x="0.456" y="0" z="-0.310" capacity="79.25" />
 
   <!-- Mass distribution -->
-  <!-- Centre de la corde x=0.629 y=0 z=0.070 -->
   <ballast x="-2.284" y="0.001" z="-0.268" mass="350"/>
 
 </airplane>
