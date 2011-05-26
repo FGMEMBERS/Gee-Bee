@@ -49,7 +49,18 @@
         <name>d</name>
         <desc>Open/Close canopy</desc>
       </key>
+      <key>
+        <name>B</name>
+        <desc>Parking brake</desc>
+      </key>
     </help>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>240</max-lb>
+      <min-lb>140</min-lb>
+    </weight>
 
     <menubar include="Dialogs/geebee-menu.xml"/>
 
@@ -58,12 +69,29 @@
   <input>
     <keyboard include="Nasal/geebee-keyboard.xml"/>
   </input>
+
+  <engines>
+    <engine>
+      <rpm type="float">0</rpm>
+    </engine>
+  </engines>
+  
+  <controls>
+    <engines>
+      <engine>
+        <magnetoL type="bool">0</magnetoL>
+        <magnetoR type="bool">0</magnetoR>
+      </engine>
+    </engines>
+  </controls>
  
   <nasal>
     <doors>
       <file>Aircraft/Gee-Bee/Nasal/doors.nas</file>
     </doors>
     <geebee>
+      <file>Aircraft/Gee-Bee/Nasal/Gee-Bee.nas</file>
+      <file>Aircraft/Gee-Bee/Nasal/electrical.nas</file>
       <file>Aircraft/Gee-Bee/Nasal/light.nas</file>
       <file>Aircraft/Gee-Bee/Nasal/liveries.nas</file>
       <file>Aircraft/Gee-Bee/Nasal/immat.nas</file>

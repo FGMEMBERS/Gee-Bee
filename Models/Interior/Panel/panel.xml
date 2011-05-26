@@ -81,5 +81,84 @@
     </offsets>
   </model>
 
-</PropertyList>
+  <!-- Key -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/key/key.xml</path>
+    <offsets>
+      <x-m>  0.073 </x-m>
+      <y-m> -0.077 </y-m>
+      <z-m> -0.032 </z-m>
+    </offsets>
+  </model>
 
+  <model> <!-- Magneto Left -->
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/magneto/magnetoL.xml</path>
+    <offsets>
+      <x-m>  0.073 </x-m>
+      <y-m> -0.163 </y-m>
+      <z-m> -0.032 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model> <!-- Magneto Right -->
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/magneto/magnetoR.xml</path>
+    <offsets>
+      <x-m>  0.073 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m> -0.032 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model> <!-- Magneto Left -->
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/MagnetoL.xml</path>
+    <offsets>
+      <x-m> 0.073 </x-m>
+      <y-m> -0.163 </y-m>
+      <z-m> -0.016 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model> <!-- Magneto Right -->
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/MagnetoR.xml</path>
+    <offsets>
+      <x-m> 0.073 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m> -0.016 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model> <!-- Contact -->
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/Contact.xml</path>
+    <offsets>
+      <x-m> 0.073 </x-m>
+      <y-m> -0.163 </y-m>
+      <z-m> -0.000 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model> <!-- Alternator -->
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/alternator.xml</path>
+    <offsets>
+      <x-m> 0.073 </x-m>
+      <y-m> -0.1465 </y-m>
+      <z-m> -0.000 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model> <!-- Starter -->
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/starter-on.xml</path>
+    <offsets>
+      <x-m> 0.073 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m> -0.000 </z-m>
+      <pitch-deg> 0 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
