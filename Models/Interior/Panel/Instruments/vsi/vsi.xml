@@ -6,6 +6,7 @@
 
   <animation>
     <object-name>fond</object-name>
+    <object-name>visses</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>   
 
@@ -56,11 +57,6 @@
       <y>  0 </y>
       <z>  0 </z>
     </axis>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>  
-    </center>
   </animation>         
  
 </PropertyList>

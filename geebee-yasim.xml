@@ -157,7 +157,8 @@
         <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="0.5" dst1="-0.5"/>
   </gear>
 
-  <tank x="0.456" y="0" z="-0.310" capacity="79.25" />
+  <!-- 35 gal -->
+  <tank x="0.456" y="0" z="-0.310" capacity="210" />
 
   <!-- Mass distribution -->
   <ballast x="-2.284" y="0.001" z="-0.268" mass="350"/>

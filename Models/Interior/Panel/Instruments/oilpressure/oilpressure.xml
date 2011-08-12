@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<PropertyList>
-
-  <path>asi.ac</path>
-
+<PropertyList> 
+    
+  <path>oilpressure.ac</path>
+    
   <animation>
     <object-name>fond</object-name>
-    <object-name>visses</object-name>
     <object-name>face</object-name>
     <object-name>needle</object-name>
 
@@ -37,28 +36,24 @@
     </emission>
   </animation>
 
-  <animation>
+  <animation> 
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <property>/engines/engine[0]/oil-pressure-psi</property>
     <interpolation>
       <entry><ind>   0 </ind><dep>   0 </dep></entry>
-      <entry><ind>  40 </ind><dep>  25 </dep></entry>
-      <entry><ind>  80 </ind><dep>  62 </dep></entry>
-      <entry><ind> 120 </ind><dep>  92 </dep></entry>
-      <entry><ind> 160 </ind><dep> 123 </dep></entry>
-      <entry><ind> 200 </ind><dep> 152 </dep></entry>
-      <entry><ind> 240 </ind><dep> 182 </dep></entry>
-      <entry><ind> 280 </ind><dep> 213 </dep></entry>
-      <entry><ind> 320 </ind><dep> 243 </dep></entry>
-      <entry><ind> 360 </ind><dep> 273 </dep></entry>
+      <entry><ind>  20 </ind><dep>  45 </dep></entry>
+      <entry><ind>  40 </ind><dep>  90 </dep></entry>
+      <entry><ind>  60 </ind><dep> 137 </dep></entry>
+      <entry><ind>  80 </ind><dep> 183 </dep></entry>
+      <entry><ind> 100 </ind><dep> 227 </dep></entry>
+      <entry><ind> 120 </ind><dep> 271 </dep></entry>
     </interpolation>
-    <axis>
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
- 
+    
 </PropertyList>
-

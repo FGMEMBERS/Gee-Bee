@@ -71,19 +71,6 @@ var Shutdown = func {
 ###############################################
 
 var update_system = func{
-  var magnetoL = props.globals.getNode("/controls/engines/engine/magnetoL",1).getBoolValue();
-  var magnetoR = props.globals.getNode("/controls/engines/engine/magnetoR",1).getBoolValue();
-  var battery_switch = props.globals.getNode("/controls/electric/battery-switch",1).getBoolValue();
-  var magneto = 0;
-  
-  if (battery_switch and magnetoL and magnetoR){
-    magneto = 3;
-  }elsif (battery_switch and (magnetoL or magnetoR)){
-    magneto = 1;
-  }elsif (battery_switch and !magnetoL and !magnetoR){
-    magneto = 0;
-  }
-  setprop("/controls/engines/engine/magnetos",magneto);
-
   settimer(update_system, 0);
 }
+    

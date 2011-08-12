@@ -11,153 +11,133 @@
     <!-- Objets transparents -->
   </animation>
 
-  <!-- ai -->
+  <!-- SWITCH BATTERIE -->
   <model>
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/switch/master.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.029 </z-m>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.057 </y-m>
+      <z-m>  0.029 </z-m>
     </offsets>
   </model>
 
-  <!-- asi -->
+  <!-- SWITCH LIGHT -->
   <model>
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/switch/lights.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
-      <y-m>  0.076 </y-m>
-      <z-m> -0.029 </z-m>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.042 </y-m>
+      <z-m>  0.029 </z-m>
     </offsets>
   </model>
 
-  <!-- alt -->
+  <!-- STARTER -->
   <model>
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/switch/starter.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
-      <y-m>  0.163 </y-m>
-      <z-m> -0.032 </z-m>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m>  0.013 </z-m>
     </offsets>
   </model>
 
-  <!-- rpm -->
+  <!-- OILTEMP -->
   <model>
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
-      <y-m>  0.124 </y-m>
-      <z-m>  0.016 </z-m>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.048 </y-m>
+      <z-m> -0.036 </z-m>
     </offsets>
   </model>
 
-  <!-- vsi -->
+  <!-- OILPRESSURE -->
   <model>
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/oilpressure/oilpressure.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
-      <y-m>  0.069 </y-m>
-      <z-m>  0.044 </z-m>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.095 </y-m>
+      <z-m> -0.036 </z-m>
     </offsets>
   </model>
 
-  <!-- turn -->
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> 0.072 </x-m>
+      <y-m> 0.122 </y-m>
+      <z-m> 0.016 </z-m>
+    </offsets>
+  </model>
+
+  <!-- MAGNETO -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/magneto/magneto.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.095 </y-m>
+      <z-m>  0.022 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> 0.069 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.049 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
   <model>
     <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
+      <x-m>  0.071 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.052 </z-m>
+      <z-m> -0.010 </z-m>
     </offsets>
   </model>
 
-  <!-- Magnetic Compass -->
+  <!-- ASI -->
   <model>
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/MagneticCompass/compas.xml</path>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
-      <y-m> -0.077 </y-m>
-      <z-m>  0.035 </z-m>
+      <x-m> 0.072 </x-m>
+      <y-m> 0.062 </y-m>
+      <z-m> 0.022 </z-m>
     </offsets>
   </model>
 
-  <!-- Key -->
+  <!-- ALT -->
   <model>
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/key/key.xml</path>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
-      <y-m> -0.077 </y-m>
-      <z-m> -0.032 </z-m>
+      <x-m>  0.072 </x-m>
+      <y-m>  0.062 </y-m>
+      <z-m> -0.034 </z-m>
     </offsets>
   </model>
 
-  <model> <!-- Magneto Left -->
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/magneto/magnetoL.xml</path>
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
-      <y-m> -0.163 </y-m>
-      <z-m> -0.032 </z-m>
-      <pitch-deg> 0 </pitch-deg>
+      <x-m>  0.072 </x-m>
+      <y-m>  0.122 </y-m>
+      <z-m> -0.034 </z-m>
     </offsets>
   </model>
 
-  <model> <!-- Magneto Right -->
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/magneto/magnetoR.xml</path>
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
     <offsets>
-      <x-m>  0.073 </x-m>
-      <y-m> -0.130 </y-m>
-      <z-m> -0.032 </z-m>
-      <pitch-deg> 0 </pitch-deg>
-    </offsets>
-  </model>
-
-  <model> <!-- Magneto Left -->
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/MagnetoL.xml</path>
-    <offsets>
-      <x-m> 0.073 </x-m>
-      <y-m> -0.163 </y-m>
-      <z-m> -0.016 </z-m>
-      <pitch-deg> 0 </pitch-deg>
-    </offsets>
-  </model>
-
-  <model> <!-- Magneto Right -->
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/MagnetoR.xml</path>
-    <offsets>
-      <x-m> 0.073 </x-m>
-      <y-m> -0.130 </y-m>
-      <z-m> -0.016 </z-m>
-      <pitch-deg> 0 </pitch-deg>
-    </offsets>
-  </model>
-
-  <model> <!-- Contact -->
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/Contact.xml</path>
-    <offsets>
-      <x-m> 0.073 </x-m>
-      <y-m> -0.163 </y-m>
-      <z-m> -0.000 </z-m>
-      <pitch-deg> 0 </pitch-deg>
-    </offsets>
-  </model>
-
-  <model> <!-- Alternator -->
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/alternator.xml</path>
-    <offsets>
-      <x-m> 0.073 </x-m>
-      <y-m> -0.1465 </y-m>
-      <z-m> -0.000 </z-m>
-      <pitch-deg> 0 </pitch-deg>
-    </offsets>
-  </model>
-
-  <model> <!-- Starter -->
-    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/lamps/starter-on.xml</path>
-    <offsets>
-      <x-m> 0.073 </x-m>
-      <y-m> -0.130 </y-m>
-      <z-m> -0.000 </z-m>
-      <pitch-deg> 0 </pitch-deg>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.148 </y-m>
+      <z-m> -0.034 </z-m>
     </offsets>
   </model>
 

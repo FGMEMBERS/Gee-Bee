@@ -119,6 +119,17 @@
     <object-name>propdisc</object-name>
   </animation>
 
+  <!-- Une ombre pour OSG -->
+  <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/Gee-Bee/Models/shadow.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.3 </z-m>
+    </offsets>
+  </model>
+
   <!-- Moteur -->
   <model>
     <path>Aircraft/Gee-Bee/Models/r1340/r1340.xml</path>
@@ -146,6 +157,76 @@
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
       <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Cranking effects -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -1.600 </x-m>
+      <y-m> -0.513 </y-m>
+      <z-m> -0.163 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -1.600 </x-m>
+      <y-m> -0.579 </y-m>
+      <z-m>  0.048 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -1.600 </x-m>
+      <y-m>  0.513 </y-m>
+      <z-m> -0.163 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -1.600 </x-m>
+      <y-m>  0.579 </y-m>
+      <z-m>  0.048 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -1.277 </x-m>
+      <y-m> -0.959 </y-m>
+      <z-m> -1.261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -1.277 </x-m>
+      <y-m>  0.959 </y-m>
+      <z-m> -1.261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Patte de queue -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Effects/ground/ground2.xml</path>   
+    <offsets>
+      <x-m>  2.270 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.355 </z-m>
     </offsets>
   </model>
 
