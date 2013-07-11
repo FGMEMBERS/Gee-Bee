@@ -1,11 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- <PropertyList include="geebee-jsbsim-cnf.xml"> -->
 <PropertyList include="geebee-yasim-cnf.xml">
 
   <sim>
-    <description>Racer Gee Bee</description>
-    <author>BARANGER Emmanuel (3D)/ BACON Guillaume (Sounds,Electrical)/ Pierre GEOFFROY (FDM)</author>
+
+    <description>Racer Gee Bee (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)/ BACON Guillaume (Sounds,Electrical)/ Pierre GEOFFROY (FDM)</author>
+
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
   </sim>
 
 </PropertyList>

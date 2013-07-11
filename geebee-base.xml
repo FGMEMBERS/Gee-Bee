@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <sim include="Nasal/views.xml">
 
-    <author>BARANGER Emmanuel (3D), Pierre GEOFFROY (FDM)</author>
+    <description>Racer Gee Bee (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)/ BACON Guillaume (Sounds,Electrical)/ Pierre GEOFFROY (FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
 
@@ -61,12 +62,12 @@
       </key>
       <line>__________Procedures__________</line>
       <text>
-	       1 - Switch battery On
-	       2 - Switch magneto to Both
-	       3 - Start
-	       4 - Switch battery Off
-	       5 - release the brakes
-	       6 - Increase the power
+       1 - Switch battery On
+       2 - Switch magneto to Both
+       3 - Start
+       4 - Switch battery Off
+       5 - release the brakes
+       6 - Increase the power
       </text>
     </help>
 
@@ -80,7 +81,7 @@
     <menubar include="Dialogs/geebee-menu.xml"/>
 
   </sim>
- 
+
   <input>
     <keyboard include="Nasal/geebee-keyboard.xml"/>
   </input>
@@ -90,7 +91,7 @@
       <rpm type="float">0</rpm>
     </engine>
   </engines>
-  
+
   <controls>
     <electric>
       <battery-switch type="bool">0</battery-switch>
@@ -105,7 +106,7 @@
       </engine>
     </engines>
   </controls>
- 
+
   <nasal>
     <doors>
       <file>Aircraft/Gee-Bee/Nasal/doors.nas</file>
@@ -118,6 +119,5 @@
       <file>Aircraft/Gee-Bee/Nasal/immat.nas</file>
     </geebee>
   </nasal>
-  
-</PropertyList>
 
+</PropertyList>

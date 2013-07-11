@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Gee Bee 2008 Emmanuel BARANGER
                   Pierre GEOFFROY
@@ -105,17 +105,17 @@
   <propeller x="2.055" y="0.0" z="-0.110" 
              radius="1.22"
              mass="805" 
-	           moment="15"
-	           cruise-speed="226" 
+             moment="15"
+             cruise-speed="226" 
              cruise-alt="5000"
-	           cruise-rpm="2200"
-	           cruise-power="670"
-	           takeoff-power="730" 
-	           takeoff-rpm="2300"
-	           min-rpm="200"
-	           max-rpm="2300"
-	           fine-stop="0.8"
-	           coarse-stop="2">
+             cruise-rpm="2200"
+             cruise-power="670"
+             takeoff-power="730" 
+             takeoff-rpm="2300"
+             min-rpm="200"
+             max-rpm="2300"
+             fine-stop="0.8"
+             coarse-stop="2">
              <actionpt x="2.505" y="0.0" z="0.112" />
              <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
              <piston-engine eng-power="730"
