@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="geebee-base.xml">
+
+  <sim>
+
+    <description>Racer Gee Bee (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)/ BACON Guillaume (Sounds,Electrical)/ Pierre GEOFFROY (FDM)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">geebee-yasim</aero>
+
+  </sim>
+ 
+</PropertyList>

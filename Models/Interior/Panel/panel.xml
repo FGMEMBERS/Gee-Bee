@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- SWITCH BATTERIE -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/switch/master.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.057 </y-m>
+      <z-m>  0.029 </z-m>
+    </offsets>
+  </model>
+
+  <!-- SWITCH LIGHT -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/switch/lights.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.042 </y-m>
+      <z-m>  0.029 </z-m>
+    </offsets>
+  </model>
+
+  <!-- STARTER -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/switch/starter.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m>  0.013 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OILTEMP -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.048 </y-m>
+      <z-m> -0.036 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OILPRESSURE -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/oilpressure/oilpressure.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.095 </y-m>
+      <z-m> -0.036 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> 0.072 </x-m>
+      <y-m> 0.122 </y-m>
+      <z-m> 0.016 </z-m>
+    </offsets>
+  </model>
+
+  <!-- MAGNETO -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/magneto/magneto.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.095 </y-m>
+      <z-m>  0.022 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> 0.069 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.049 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.071 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> 0.072 </x-m>
+      <y-m> 0.062 </y-m>
+      <z-m> 0.022 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m>  0.062 </y-m>
+      <z-m> -0.034 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m>  0.122 </y-m>
+      <z-m> -0.034 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Gee-Bee/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.072 </x-m>
+      <y-m> -0.148 </y-m>
+      <z-m> -0.034 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
